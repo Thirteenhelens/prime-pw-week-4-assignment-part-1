@@ -114,22 +114,25 @@ console.log('sumAll - should be 10:', sumAll(sumAllArray));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-let justPosArray = [-1, 2, -3, 4, -5, 6, 0.25];
-let justPosArray2 = [-1, -4. -5, -32];
-let returnPosArray = []
+let mixedArray = [-1, 2, -3, 4, -5, 6];
+let negativeArray = [-1, -4. -5, -32];
+let justPosArray = []
 
 function justPos ( array ) {
-  for (number in array) {
-    if (number > 0) {
-      return returnPosArray + number;
-    } else if (number <= 0) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      justPosArray.push(array[i]);
+    } else if (i === array.length - 1) {
       return [];
     }
   }
+  return justPosArray;
 }
 
-console.log('justPos - should be 2, 4, 6:', justPos(justPosArray));
-console.log('justPos - should be []:', justPos(justPosArray2));
+// I hope it's not, but is line 126 wrong to do?
+
+console.log('justPos - should be 2, 4, 6:', justPos(mixedArray));
+console.log('justPos - should be empty:', justPos(negativeArray));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it

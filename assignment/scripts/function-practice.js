@@ -129,7 +129,7 @@ function justPos ( array ) {
   return justPosArray;
 }
 
-// I hope it's not, but is line 126 wrong to do?
+// I hope it's not, but is line 126 the wrong move?
 
 console.log('justPos - should be 2, 4, 6:', justPos(mixedArray));
 console.log('justPos - should be empty:', justPos(negativeArray));

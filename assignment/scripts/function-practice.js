@@ -129,7 +129,7 @@ function justPos ( array ) {
   return justPosArray;
 }
 
-// I hope it's not, but is line 126 the wrong move?
+// I hope it's not, but is line 126 the wrong thing to do?
 
 console.log('justPos - should be 2, 4, 6:', justPos(mixedArray));
 console.log('justPos - should be empty:', justPos(negativeArray));
@@ -137,3 +137,22 @@ console.log('justPos - should be empty:', justPos(negativeArray));
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+// I just copy pasted from the website as Edabit won't let me test it on their website w/o paying for it.
+// Also, I cannot figure out how to make this function work with negatives. 
+
+// Add up the Numbers from a Single Number:
+// Create a function that takes a number as an argument.
+// Add up all the numbers from 1 to the number you passed to the function.
+// For example, if the input is 4 then your function should return 10
+// because 1 + 2 + 3 + 4 = 10.
+
+function addUp(num) {
+	 let sum = 0;
+  for (let i = 0; i <= num; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+console.log('addUp - should be 15:', addUp(5));

@@ -14,7 +14,7 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return 'Hello ' + name + '!';
+  return 'Hello, ' + name + '!';
 }
 // Remember to call the function to test
 console.log('helloName - Should say "Hello Jack!""', helloName('Jack'));
@@ -139,7 +139,7 @@ console.log('justPos - should be empty:', justPos(negativeArray));
 //     here in a comment, write the function, and test it!
 
 // I just copy pasted from the website as Edabit won't let me test it on their website w/o paying for it.
-// Also, I cannot figure out how to make this function work with negatives. 
+// Also, I cannot figure out how to make this function work with negatives.
 
 // Add up the Numbers from a Single Number:
 // Create a function that takes a number as an argument.
